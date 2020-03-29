@@ -25,7 +25,7 @@ header a{
 
 header .logo a{
 
-    background-image: url("unnamed1.jpg");
+    background-image: url("zdjecia/unnamed1.jpg");
     background-size: 180px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -40,23 +40,21 @@ header .logo a{
 .wyroznienia{
     background: white;
     color: gray;  
-    padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
 }
 
 .wyroznienia figure{
     text-align: center;
     text-transform: uppercase;
-    margin: 200px
-    width:100px;
+    
     
 }
 
 .wyroznienia figure img{
     border: 3px solid #868686;
     border-radius: 30px;
-    width: 660px;
+    width: 660px:
     
 }
 
@@ -116,4 +114,73 @@ footer{
     padding: 10px 20px;
     text-align: center;
     font-size: 15px
+}
+
+
+.oped {
+    margin: 30px;
+    
+}
+
+.oped a{
+    
+    font-size: 30px;
+    color: white;
+    
+    background: black;
+    border-radius: 5px;
+    
+}
+
+.opinie {
+    padding-left: 20px;
+    
+}
+
+.opinie h3{
+    outline-style: double
+}
+
+.opinie button{
+    border-radius: 15px;
+    background: black;
+    color:white;
+}
+
+.bb{
+    font-size: 100px;
+}
+
+
+.logowanie{     
+    margin: 10px;
+    display: flex;
+    flex-direction:column
+}
+.log{
+    
+    font-size: 30px;
+    
+}
+    
+.logowanie blok1{
+    margin: 10px;
+    background: black;
+}
+
+.logowanie button{
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+}
+.logowanie a{
+    background: black;
+    width: 100px;
+    color: white;
+}
+
+.logowanie input{
+    width: 200px;
+    
 }
