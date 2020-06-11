@@ -1,0 +1,186 @@
+body{
+    background: rgb(59, 55, 55)
+    color: white;
+    font-family: Helvetica Neune, Helvetica, Arial, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    padding: 20px;
+    height: 100px;
+    background: black;
+    text-align: center;
+    
+}
+
+header a{
+    
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    
+}
+
+header .logo a{
+
+    background-image: url("zdjecia/unnamed1.jpg");
+    background-size: 180px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height:80px;
+    position: relative;
+    text-indent:-999999px;
+    top: -30px;
+    width:180px;
+
+}
+
+.wyroznienia{
+    background: white;
+    color: gray;  
+    display: flex;
+    flex-direction:row;
+}
+
+.wyroznienia figure{
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+
+.wyroznienia figure img{
+    border: 3px solid #868686;
+    border-radius: 30px;
+    width: 660px:
+    
+}
+
+.sres figure{
+    text-align: center;
+}
+
+.sres figure img{
+    border: 3px solid black;
+    border-radius: 30px;
+}
+.pracownicy figure{
+    text-align: center;
+}
+
+.pracownicy figure img{
+    border: 3px solid black;
+    border-radius: 30px
+}
+
+.sgal figure{
+    text-align: center;
+}
+
+.sgal figure img{
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    margin: 10px;
+    text-transform: capitalize
+    
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px
+}
+
+
+.oped {
+    margin: 30px;
+    
+}
+
+.oped a{
+    
+    font-size: 30px;
+    color: white;
+    
+    background: black;
+    border-radius: 5px;
+    
+}
+
+.opinie {
+    padding-left: 20px;
+    
+}
+
+.opinie h3{
+    outline-style: double
+}
+
+.opinie button{
+    border-radius: 15px;
+    background: black;
+    color:white;
+}
+
+.bb{
+    font-size: 100px;
+}
+
+
+.logowanie{     
+    margin: 10px;
+    display: flex;
+    flex-direction:column
+}
+.log{
+    
+    font-size: 30px;
+    
+}
+    
+.logowanie blok1{
+    margin: 10px;
+    background: black;
+}
+
+.logowanie button{
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+}
+.logowanie a{
+    background: black;
+    width: 100px;
+    color: white;
+}
+
+.logowanie input{
+    width: 200px;
+    
+}

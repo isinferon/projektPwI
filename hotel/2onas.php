@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kristoff Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a  href="logout.php">Wyloguj sie</a></li>
+                <li><a href="2index.php">Hotel</a></li>
+                <li><a href="2restauracja.php">Restauracja</a></li>
+                <li><a href="2galeria.php">Galeria</a></li>
+                <li class="logo"><a href=" 2index.php"> Loko kristoff hotel</a></li>
+                <li><a href="2onas.php">O nas</a></li>
+                <li><a href="2kontakt.php">Kontakt</a></li>
+                <li><a href="2opinie.php">Opinie</a></li>
+                <li><a href="2mojekonto.php">Moje konto</a></li>
+             
+            </ul>
+        
+        </nav>
+        
+    
+    </header>
+    <section class="pracownicy">
+        <figure>
+            <img src="zdjecia/pracownicy.jpeg" alt="pracownicy">
+            
+        </figure> 
+    <h1>O nas</h1>
+    <p>Kristoff Hotel zlokalizowany jest w samym sercu tętniącego życiem Suwałk. Zaledwie pięciominutowy spacer dzieli nas od magicznego Długiego Targu. Zabytkowe kamieniczki, imponujący ratusz, klimatyczne kawiarenki, fontanna – wszystko to jest na wyciągnięcie ręki. Najważniejsze centra biznesowe znajdują się w niedalekiej odległości od hotelu. W ciągu 15-20 minut dotrzemy do Amber Expo czy Olivia Business Centre.
+        </p>
+    </section>
+    
+    <footer>876 Swietokrzyska, Tel: 000 000 000 </footer>
+</body>
+    
+    
+</html>
