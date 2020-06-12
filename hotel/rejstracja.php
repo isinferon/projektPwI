@@ -4,13 +4,13 @@
      
     if (isset($_POST['email']))
     {
-        //Udana walidacja? Załóżmy, że tak!
+        
         $wszystko_OK=true;
          
-        //Sprawdź poprawność nickname'a
+       
         $nick = $_POST['nick'];
          
-        //Sprawdzenie długości nicka
+        
         if ((strlen($nick)<3) || (strlen($nick)>20))
         {
             $wszystko_OK=false;
@@ -23,7 +23,7 @@
             $_SESSION['e_nick']="Nick może składać się tylko z liter i cyfr (bez polskich znaków)";
         }
          
-        // Sprawdź poprawność adresu email
+       
         $email = $_POST['email'];
         $emailB = filter_var($email, FILTER_SANITIZE_EMAIL);
          
@@ -33,7 +33,7 @@
             $_SESSION['e_email']="Podaj poprawny adres e-mail!";
         }
          
-        //Sprawdź poprawność hasła
+        
         $haslo1 = $_POST['haslo1'];
         $haslo2 = $_POST['haslo2'];
          
@@ -51,7 +51,7 @@
  
        // $haslo_hash = password_hash($haslo1, PASSWORD_DEFAULT);
          
-        //Czy zaakceptowano regulamin?
+        
         if (!isset($_POST['regulamin']))
         {
             $wszystko_OK=false;
@@ -60,7 +60,7 @@
          
        
          
-        //Zapamiętaj wprowadzone dane
+        
         $_SESSION['fr_nick'] = $nick;
         $_SESSION['fr_email'] = $email;
         $_SESSION['fr_haslo1'] = $haslo1;
@@ -79,7 +79,7 @@
             }
             else
             {
-                //Czy email już istnieje?
+                
                 $rezultat = $polaczenie->query("SELECT id FROM uzytkownik WHERE email='$email'");
                  
                 if (!$rezultat) throw new Exception($polaczenie->error);
@@ -91,21 +91,11 @@
                     $_SESSION['e_email']="Istnieje już konto przypisane do tego adresu e-mail!";
                 }       
  
-//                //Czy nick jest już zarezerwowany?
-//                $rezultat = $polaczenie->query("SELECT id FROM uzytkownik WHERE user='$nick'");
-//                 
-//                if (!$rezultat) throw new Exception($polaczenie->error);
-//                 
-//                $ile_takich_nickow = $rezultat->num_rows;
-//                if($ile_takich_nickow>0)
-//                {
-//                    $wszystko_OK=false;
-//                    $_SESSION['e_nick']="Istnieje już gracz o takim nicku! Wybierz inny.";
-//                }
+
                  
                 if ($wszystko_OK==true)
                 {
-                    //Hurra, wszystkie testy zaliczone, dodajemy gracza do bazy
+                    
                      
                     if ($polaczenie->query("INSERT INTO uzytkownik VALUES (NULL, '$nick',NULL, NULL, '$email', '$haslo1')"))
                     {
