@@ -1,16 +1,7 @@
 <?php
 session_start();
 
-        require_once "connect.php";
-        $polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-        $rezultat = $polaczenie->query("SELECT * FROM uzytkownik");
-        $wiersz = $rezultat->fetch_assoc();
 
-    if($wiersz['banned']==1)
-    {
-        header('Location: index.php');
-        exit();
-    }
     
 
     

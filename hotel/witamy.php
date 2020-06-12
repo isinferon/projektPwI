@@ -49,7 +49,7 @@ session_start();
         Pomyslna rejestracja! Zaloguj sie!
     
         
-        <form action="zalogujsiev2.php" method="post"> 
+        <form action="2zalogujsie.php" method="post"> 
         Email:<br/><input type="text" name="mail" /> <br/>
         Hasło:<br/><input type="password" name="haslo" /> <br/><br/>
             <input type="submit" value="Zaloguj się" />
